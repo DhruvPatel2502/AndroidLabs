@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Labs</string>
-    <string name="hello_message">Kem cho!</string>
-    <string name="ButtonText">hu button chu</string>
+    <string name="app_name">એન્ડ્રોઇડ લેબ્સ</string>
+    <string name="hello_message">હેલો વર્લ્ડ!</string>
+    <string name="ButtonText">હું એક બટન છું</string>
 </resources>
