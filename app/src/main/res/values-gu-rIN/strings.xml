@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">એન્ડ્રોઇડ લેબ્સ</string>
-    <string name="hello_message">હેલો વર્લ્ડ!</string>
-    <string name="ButtonText">હું એક બટન છું</string>
+    <string name="Toast">અહીં વધુ માહિતી છે </string>
+    <string name="TextView">લેબ 2 GUI</string>
+    <string name="snackmessageT">સ્વીચ ચાલુ છે</string>
+    <string name="snackmessageF">સ્વીચ બંધ છે</string>
+    <string name="EditText">અહીં નામ દાખલ કરો</string>
+    <string name="Switch">ચાલુ/બંધ સ્વિચ કરો</string>
+    <string name="flagDescription">આ ભારતનો ધ્વજ છે</string>
+    <string name="click_here">અહીં ક્લિક કરો</string>
+    <string name="check_this_out">આ તપાસો</string>
 </resources>
