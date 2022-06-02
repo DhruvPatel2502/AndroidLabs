@@ -1,11 +1,5 @@
 <resources>
-    <string name="Toast">Here is more information</string>
-    <string name="TextView">Lab 2 GUI</string>
-    <string name="snackmessageT">The switch is On</string>
-    <string name="snackmessageF">The switch is Off</string>
-    <string name="EditText">Enter Name Here</string>
-    <string name="Switch">Switch on/off</string>
-    <string name="flagDescription">This is Canada\'s flag</string>
-    <string name="click_here">Click Here</string>
-    <string name="check_this_out">Check this Out</string>
+    <string name="app_name">Android Labs</string>
+    <string name="hello_message">Hello World!</string>
+     <string name="ButtonText">I\’m a button</string>
 </resources>

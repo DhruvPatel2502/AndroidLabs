@@ -3,13 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/dhruv/AndroidStudioProjects/AndroidLabs2/app/src/main/res/drawable-IN/flag.xml" value="0.1505" />
-        <entry key="..\:/Users/dhruv/AndroidStudioProjects/AndroidLabs2/app/src/main/res/drawable-gu-rIN/flag.xml" value="0.2445" />
-        <entry key="..\:/Users/dhruv/AndroidStudioProjects/AndroidLabs2/app/src/main/res/drawable/flag.xml" value="0.1515" />
-        <entry key="..\:/Users/dhruv/AndroidStudioProjects/AndroidLabs2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.118" />
-        <entry key="..\:/Users/dhruv/AndroidStudioProjects/AndroidLabs2/app/src/main/res/layout/activity_main.xml" value="0.3771626297577855" />
-        <entry key="..\:/Users/dhruv/AndroidStudioProjects/AndroidLabs2/app/src/main/res/layout/activity_main_constraint.xml" value="0.22530996152201796" />
-        <entry key="..\:/Users/dhruv/AndroidStudioProjects/AndroidLabs2/app/src/main/res/layout/activity_main_linear.xml" value="0.264" />
+        <entry key="..\:/Users/dhruv/AndroidStudioProjects/AndroidLabs2/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/dhruv/AndroidStudioProjects/AndroidLabs2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
