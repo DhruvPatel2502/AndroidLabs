@@ -9,4 +9,7 @@
     <string name="flagDescription">આ ભારતનો ધ્વજ છે</string>
     <string name="click_here">અહીં ક્લિક કરો</string>
     <string name="check_this_out">આ તપાસો</string>
+    <string name="emailDescription">Enter your email address</string>
+    <string name="Email">Type email here</string>
+    <string name="passwordText">Type your Password:</string>
 </resources>

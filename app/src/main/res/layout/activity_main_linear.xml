@@ -1,81 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<LinearLayout android:id="@+id/RootLayout"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <TextView
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/TextView"
-        android:textAlignment="center"
-        android:textSize="34sp" />
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:text="@string/emailDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
 
-    <LinearLayout
-        android:id="@+id/secondLayout"
+        />
+
+    <EditText
+        android:id="@+id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_gravity="fill"
-            android:layout_height="wrap_content"
-            android:text="@string/click_here"
-            />
+        android:layout_marginTop="28dp"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
 
-        <CheckBox
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="fill"
-            android:text="@string/check_this_out"
-            />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/thirdLayout"
+    <TextView
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:text="@string/passwordText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="fill"
-            android:contentDescription="@string/flagDescription"
-            android:src="@drawable/flag" />
-
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/Switch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="fill"
-            android:text="@string/Switch" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/forthLayout"
+    <EditText
+        android:id="@+id/EnterPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginTop="128dp"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName|textCapWords"
-            android:hint="@string/EditText"
-            android:autofillHints="a" />
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

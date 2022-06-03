@@ -8,4 +8,7 @@
     <string name="flagDescription">This is Canada\'s flag</string>
     <string name="click_here">Click Here</string>
     <string name="check_this_out">Check this Out</string>
+    <string name="emailDescription">Enter your email address</string>
+    <string name="Email">Type email here</string>
+    <string name="passwordText">Type your Password:</string>
 </resources>
