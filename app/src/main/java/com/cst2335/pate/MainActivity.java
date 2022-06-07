@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity  {
         Button iBtn = findViewById(R.id.button);
         iBtn.setOnClickListener( btn -> Toast.makeText(this, this.getString(R.string.Toast), LENGTH_LONG).show());
 
-        androidx.appcompat.widget.SwitchCompat iSwt = findViewById(R.id.Switch);
+
         SwitchCompat swt = findViewById(R.id.Switch);
 
         swt.setOnCheckedChangeListener((cb, b) -> {
@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity  {
             String snackMessageF = this.getResources().getString(R.string.snackmessageF);
 
             if(b){
-                Snackbar.make(swt,snackMessageT, LENGTH_SHORT).setAction("Undo", click ->cb.setChecked(!b)).show();
+                Snackbar.make(swt,snackMessageT, LENGTH_SHORT).setAction(this.getString(R.string.undo), click ->cb.setChecked(!b)).show();
             }else{
-                Snackbar.make(swt,snackMessageF, LENGTH_SHORT).setAction("Undo", click ->cb.setChecked(!b)).show();
+                Snackbar.make(swt,snackMessageF, LENGTH_SHORT).setAction(this.getString(R.string.undo), click ->cb.setChecked(!b)).show();
             }
         });
 
