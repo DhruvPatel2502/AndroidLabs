@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="Toast">અહીં વધુ માહિતી છે </string>
-    <string name="TextView">લેબ 2 GUI</string>
-    <string name="snackmessageT">સ્વીચ ચાલુ છે</string>
-    <string name="snackmessageF">સ્વીચ બંધ છે</string>
-    <string name="EditText">અહીં નામ દાખલ કરો</string>
-    <string name="Switch">ચાલુ/બંધ સ્વિચ કરો</string>
-    <string name="flagDescription">આ ભારતનો ધ્વજ છે</string>
-    <string name="click_here">અહીં ક્લિક કરો</string>
-    <string name="check_this_out">આ તપાસો</string>
-    <string name="emailDescription">Enter your email address</string>
-    <string name="Email">Type email here</string>
-    <string name="passwordText">Type your Password:</string>
+
+    <string name="emailDescription">તમારુ ઇમેઇલ એડ્રેસ દાખલ કરો</string>
+    <string name="Email">અહીં ઈમેલ લખો</string>
+    <string name="name">તમારો પાસવર્ડ ટાઇપ કરો:</string>
+    <string name="Password">તમારો પાસવર્ડ ટાઇપ કરો:</string>
+    <string name="yourProfile">તમારી પ્રોફાઇલ</string>
+    <string name="yourPicture">તારો ફોટો:</string>
+    <string name="PictureInstruction">ચિત્ર લેવા માટે ઉપરના બટન પર ક્લિક કરો</string>
+    <string name="description">"આ ચિત્ર છે "</string>
+    <string name="Button" >પ્રવેશ કરો</string>
 </resources>
