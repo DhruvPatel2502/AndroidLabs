@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-    loadData();
+        loadData();
         updateViews();
     }
 

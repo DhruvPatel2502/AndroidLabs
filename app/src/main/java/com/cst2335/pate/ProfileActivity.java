@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -23,6 +24,7 @@ public class ProfileActivity extends AppCompatActivity {
     public static String Email;
     EditText Edittext;
     ImageView imgv;
+    Button chatroom;
 
     ActivityResultLauncher<Intent> myPictureTakerLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult()
@@ -76,7 +78,16 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
         imgv = findViewById(R.id.imageButton);
+
+
+
+         chatroom = findViewById(R.id.chatRoom);
+        chatroom.setOnClickListener(click -> {
+            Intent gotoChatroom = new Intent(ProfileActivity.this,ChatRoomActivity.class);
+            startActivity(gotoChatroom);
+        });
     }
+
     @Override //screen is visible but not responding
     protected void onStart() {
         super.onStart();

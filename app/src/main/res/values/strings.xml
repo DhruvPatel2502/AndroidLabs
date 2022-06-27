@@ -8,5 +8,9 @@
     <string name="yourPicture">Your Picture:</string>
     <string name="PictureInstruction">Click the button above to take the picture</string>
     <string name="description">"this is the picture "</string>
-    <string name="Button" >Login</string>
+    <string name="Button">Login</string>
+    <string name="sendButton">Send</string>
+    <string name="receiveButton">Receive</string>
+    <string name="hint">Type here</string>
+    <string name="chatRoom">Go to Chat</string>
 </resources>

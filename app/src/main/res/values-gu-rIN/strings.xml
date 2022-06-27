@@ -10,4 +10,8 @@
     <string name="PictureInstruction">ચિત્ર લેવા માટે ઉપરના બટન પર ક્લિક કરો</string>
     <string name="description">"આ ચિત્ર છે "</string>
     <string name="Button" >પ્રવેશ કરો</string>
+    <string name="sendButton">Send</string>
+    <string name="receiveButton">Receive</string>
+    <string name="hint">Type here</string>
+    <string name="chatRoom">Go to Chat</string>
 </resources>
