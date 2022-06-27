@@ -13,4 +13,8 @@
     <string name="receiveButton">Receive</string>
     <string name="hint">Type here</string>
     <string name="chatRoom">Go to Chat</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="MakeChoice">Make a choice</string>
+    <string name="delete">Do you want to delete a row</string>
 </resources>

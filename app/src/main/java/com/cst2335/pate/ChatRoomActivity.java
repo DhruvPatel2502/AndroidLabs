@@ -76,17 +76,17 @@ public class ChatRoomActivity extends AppCompatActivity {
 
         myList.setOnItemLongClickListener( (p, b, pos, id) -> {
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setTitle("Make a choice")
+            alertDialogBuilder.setTitle(getString(R.string.MakeChoice))
 
                     //What is the message:
-                    .setMessage("Do you want to delete a row")
+                    .setMessage(getString(R.string.delete))
 
                     //what the Yes button does:
-                    .setPositiveButton("Yes", (click, arg) -> {
+                    .setPositiveButton(getString(R.string.yes), (click, arg) -> {
                         element.remove(pos);
                         myAdapter.notifyDataSetChanged();
                     })
-                    .setNegativeButton("no", (click, arg) -> {
+                    .setNegativeButton(getString(R.string.no), (click, arg) -> {
 
                         myAdapter.notifyDataSetChanged();
                     })
