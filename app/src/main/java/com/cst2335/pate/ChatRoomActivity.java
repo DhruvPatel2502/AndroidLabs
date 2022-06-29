@@ -75,14 +75,18 @@ public class ChatRoomActivity extends AppCompatActivity {
         });
 
         myList.setOnItemLongClickListener( (p, b, pos, id) -> {
+
+            String message = String.valueOf(myAdapter.getItem(pos));
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
             alertDialogBuilder.setTitle(getString(R.string.MakeChoice))
 
                     //What is the message:
-                    .setMessage(getString(R.string.delete))
+                    .setMessage(getString(R.string.delete)+"\nThe message is at row number:"+(pos+1)+"\n"+"And the message is:"+message)
+
 
                     //what the Yes button does:
                     .setPositiveButton(getString(R.string.yes), (click, arg) -> {
+
                         element.remove(pos);
                         myAdapter.notifyDataSetChanged();
                     })
