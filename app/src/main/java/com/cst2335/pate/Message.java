@@ -5,14 +5,11 @@ class Messages {
     String messageInput;
     public Boolean sendOrReceive;
 
+
     Messages(String messageIn, Boolean SorR, long id) {
         this.messageInput = messageIn;
         this.sendOrReceive = SorR;
-        this.id = id;
-    }
-
-    public Messages(String n, String e) {
-        this(n, true, 0);
+        this.id=id;
     }
 
 

@@ -1,54 +1,51 @@
 package com.cst2335.pate;
 
-
-
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-    public class DatabaseHelper extends SQLiteOpenHelper {
-
-        protected final static String DATABASE_NAME = "ContactsDB";
-        protected final static int VERSION_NUM = 1;
-        public final static String TABLE_NAME = "CONTACTS";
-        public final static String COL_EMAIL = "EMAIL";
-        public final static String COL_NAME = "NAME";
-        public final static String COL_ID = "_id";
-
-        public DatabaseHelper(Context ctx)
-        {
-            super(ctx, DATABASE_NAME, null, VERSION_NUM);
-        }
 
 
-        //This function gets called if no database file exists.
-        //Look on your device in the /data/data/package-name/database directory.
-        @Override
-        public void onCreate(SQLiteDatabase db)
-        {
-            db.execSQL("CREATE TABLE " + TABLE_NAME + " (_id INTEGER PRIMARY KEY AUTOINCREMENT, "
-                    + COL_NAME  + " text);");  // add or remove columns
-        }
+public class DatabaseHelper extends SQLiteOpenHelper {
+
+    public static final String DATABASE_NAME = "mylist.dbs";
+    public static final String TABLE_NAME = "mylist_datas";
+    public static final String COL1 = "ID";
+    public static final String COL2 = "ITEM1";
+    public static final String COL3 = "sOrR";
 
 
-        //this function gets called if the database version on your device is lower than VERSION_NUM
-        @Override
-        public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
-        {   //Drop the old table:
-            db.execSQL( "DROP TABLE IF EXISTS " + TABLE_NAME);
-
-            //Create the new table:
-            onCreate(db);
-        }
-
-        //this function gets called if the database version on your device is higher than VERSION_NUM
-        @Override
-        public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion)
-        {   //Drop the old table:
-            db.execSQL( "DROP TABLE IF EXISTS " + TABLE_NAME);
-
-            //Create the new table:
-            onCreate(db);
-        }
+    public DatabaseHelper(Context context) {
+        super(context, DATABASE_NAME, null, 1);
     }
+
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+        String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                " ITEM1 TEXT," +"sOrR TEXT )";
+        db.execSQL(createTable);
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE if EXISTS " + TABLE_NAME);
+        onCreate(db);
+    }
+    public void onUpgrades(SQLiteDatabase db) {
+        db.execSQL("DROP TABLE if EXISTS " + TABLE_NAME);
+        onCreate(db);
+    }
+    public int getRows() {
+        String countQuery = "SELECT  * FROM " + TABLE_NAME;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(countQuery, null);
+        int count = cursor.getCount();
+        cursor.close();
+        return count;
+    }
+    public Cursor getListContents(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String [] columns = {DatabaseHelper.COL1, DatabaseHelper.COL2,DatabaseHelper.COL3};
+        return db.query(false, DatabaseHelper.TABLE_NAME, columns, null, null, null, null, null, null);
+    }
+}
