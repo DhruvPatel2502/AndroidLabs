@@ -6,10 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
 
+    <Button
+        android:id="@+id/goToWeather"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="408dp"
+        android:text="Go To Weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="164dp"
         android:orientation="vertical"
         android:text="@string/emailDescription"
@@ -21,11 +33,12 @@
         android:id="@+id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="204dp"
         android:hint="@string/Email"
         android:importantForAutofill="no"
-        android:inputType="textEmailAddress"
 
+        android:inputType="textEmailAddress"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,7 +47,7 @@
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="76dp"
         android:orientation="vertical"
         android:text="@string/name"
@@ -82,15 +95,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/InstructionPicture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="436dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="148dp"
 
         android:orientation="vertical"
         android:text="@string/PictureInstruction"
@@ -102,8 +114,8 @@
         android:id="@+id/imageButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="368dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="284dp"
         android:contentDescription="@string/description"
         android:src="@android:drawable/picture_frame"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +125,7 @@
         android:id="@+id/chatRoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="532dp"
+        android:layout_marginTop="468dp"
         android:text="@string/chatRoom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

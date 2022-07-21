@@ -86,7 +86,16 @@ public class ProfileActivity extends AppCompatActivity {
             Intent gotoChatroom = new Intent(ProfileActivity.this,ChatRoomActivity.class);
             startActivity(gotoChatroom);
         });
+        Button goToWeather = findViewById(R.id.goToWeather);
+        goToWeather.setOnClickListener(click ->
+
+        {
+            Intent gotoWeather = new Intent(ProfileActivity.this, WeatherForecast.class);
+            startActivity(gotoWeather);
+        });
+
     }
+
 
     @Override //screen is visible but not responding
     protected void onStart() {
