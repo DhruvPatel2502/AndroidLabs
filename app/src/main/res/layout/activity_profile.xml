@@ -10,7 +10,8 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="216dp"
         android:orientation="vertical"
         android:text="@string/emailDescription"
         android:textSize="16sp"
@@ -35,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="4dp"
         android:orientation="vertical"
         android:text="@string/name"
         android:textSize="16sp"
@@ -46,12 +47,12 @@
         android:id="@+id/EnterName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="184dp"
         android:importantForAutofill="no"
         android:inputType="text"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -116,6 +117,17 @@
         android:layout_marginTop="532dp"
         android:text="@string/chatRoom"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gotoweather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Go to weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
