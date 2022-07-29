@@ -17,4 +17,5 @@
     <string name="no">No</string>
     <string name="MakeChoice">Make a choice</string>
     <string name="delete">Do you want to delete a row</string>
+    <string name="app_name">Dhruv</string>
 </resources>

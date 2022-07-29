@@ -83,7 +83,7 @@ public class ProfileActivity extends AppCompatActivity {
 
          chatroom = findViewById(R.id.chatRoom);
         chatroom.setOnClickListener(click -> {
-            Intent gotoChatroom = new Intent(ProfileActivity.this,ChatRoomActivity.class);
+            Intent gotoChatroom = new Intent(ProfileActivity.this, ChatRoomActivity.class);
             startActivity(gotoChatroom);
         });
         Button goToWeather = findViewById(R.id.goToWeather);
